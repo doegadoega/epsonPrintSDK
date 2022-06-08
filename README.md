@@ -1,3 +1,7 @@
+Epsonの*.aファイルのサイズがGithubのPush100MBの制限にひっかるため、https://github.com/Shoptree/epsonPrintSDK をForkし、公開されている内容を編集しました。
+
+------
+
 Add "com.epson.escpos" in Supported External Accessory Protocol in your application info.plist
 
 =========================================================================
