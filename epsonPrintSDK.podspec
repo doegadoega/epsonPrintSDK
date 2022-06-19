@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   s.author       = { 'SEIKO EPSON CORPORATION' => 'contact@epson.com' }
   s.platform     = :ios, '13.0'
   s.source       = { :git => 'https://github.com/Shoptree/epsonPrintSDK.git', :tag => s.version.to_s }
-  s.source_files  = '*.h'
-  s.preserve_paths = '*.a'
-  s.frameworks = 'UIKit', 'CoreGraphics', 'ExternalAccessory'
+  s.source_files  = 'ePOS2.h', 'ePOSEasySelect.h'
+  s.preserve_paths = 'libepos2.a', 'libeposeasyselect.a'
+  s.frameworks = 'UIKit', 'CoreGraphics', 'ExternalAccessory', 'CoreLocation.framework', 'CoreNFC.framework'
   s.library   = 'epos2', 'z', 'xml2.2'
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/epsonPrintSDK"' }
 end
