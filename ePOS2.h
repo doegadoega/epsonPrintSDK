@@ -1628,7 +1628,7 @@ enum Epos2BtConnection : int {
 @interface Epos2BluetoothConnection : NSObject
 - (id) init;
 - (void) dealloc;
-- (int) connectDevice : (NSMutableString *)target;
+- (int) connectDevice : (NSString *)target;
 - (int) disconnectDevice : (NSString *)target;
 @end
 
